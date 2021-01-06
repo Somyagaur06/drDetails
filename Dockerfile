@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-EXPOSE:8010
-COPY target/drDetails.war drDetails.war
-ENTRYPOINT["java","-war","drDetails.war"]
+EXPOSE 8040
+COPY drDetails/target/drDetails.war drDetails.war
+ENTRYPOINT ["java","-war","drDetails.war"]
 
