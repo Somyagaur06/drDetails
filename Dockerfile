@@ -1,5 +1,5 @@
 FROM openjdk:8
-EXPOSE 8040
-COPY drDetails/target/drDetails.war drDetails.jar
+EXPOSE 8080
+COPY drDetails/target/drDetails.jar drDetails.jar
 ENTRYPOINT ["java","-jar","drDetails.jar"]
 
