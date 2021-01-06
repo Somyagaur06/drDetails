@@ -19,7 +19,7 @@ public class drDetails {
 	
 	
 	
-	@GetMapping("/dot/rest/drApiService/getDRDetails/component/{componentName}")
+	@PostMapping("/dot/rest/drApiService/getDRDetails/component/{componentName}")
 	public drPojo getdrDetails(@PathVariable String componentName) {
 		
 		
